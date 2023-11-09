@@ -14,7 +14,7 @@ export const uploadParticipant = async (params: {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": params.apiKey,
+        "NRC-API-KEY": params.apiKey,
       },
       body: JSON.stringify(params.host),
     });
