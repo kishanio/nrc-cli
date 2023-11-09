@@ -1,0 +1,35 @@
+{
+  "name": "participants-uploader-node",
+  "version": "1.0.0",
+  "description": "Parsing excel file and uploading list of participants to API",
+  "engines": {
+    "node": ">= 16"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "dev": "npm run build && node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kishan Thobhani",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "conf": "^12.0.0",
+    "figlet": "^1.7.0",
+    "node-fetch": "^2.7.0",
+    "ora": "^5.4.1",
+    "xlsx": "^0.18.5"
+  },
+  "bin": {
+    "participants-uploader": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.9.0",
+    "@types/node-fetch": "^2.6.9",
+    "@types/yargs": "^17.0.31",
+    "typescript": "^5.2.2"
+  }
+}
